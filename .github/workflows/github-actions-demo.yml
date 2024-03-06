@@ -15,9 +15,10 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 7.2
-
-      - name: Install dependencies
-        run: composer install --prefer-dist --no-progress
+      - name: Build dependencies
+        uses: "ramsey/composer-install@v3"
+        with:
+          working-directory: "www"
       # - name: Build dependencies
       #   run: npm run build
       - name: Archive production artifact
