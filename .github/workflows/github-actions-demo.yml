@@ -18,7 +18,7 @@ jobs:
           extensions: mbstring, bcmath
           coverage: xdebug
       - name: Install Composer dependencies
-        run: composer install --no-interaction --no-progress --prefer-dist --optimize-autoloader -d ./update
+        run: composer install --no-interaction --no-progress --prefer-dist --optimize-autoloader -d ./www
       - name: Archive production artifact
         uses: actions/upload-artifact@main
         with:
