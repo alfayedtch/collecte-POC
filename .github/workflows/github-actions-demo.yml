@@ -23,7 +23,7 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
-          username:  revele@2hfan.org
+          username: c1550235c
           server: ftp.2hfan.org
           port: 21 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
