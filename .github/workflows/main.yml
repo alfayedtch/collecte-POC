@@ -29,6 +29,7 @@ jobs:
       - name: Prepare Laravel Application
         run: |
           cp www/.env.prod www/.env
+          cd www
           php artisan key:generate
       - name: Archive production artifact
         uses: actions/upload-artifact@main
