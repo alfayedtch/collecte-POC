@@ -15,14 +15,10 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.1
-      - name: composer update action
-        uses: kawax/composer-update-action@master
       - name: Build dependencies
-        uses: "ramsey/composer-install@v3"
+        uses: "ramsey/composer-install@v2"
         with:
           working-directory: "www"
-      # - name: Build dependencies
-      #   run: npm run build
       - name: Archive production artifact
         uses: actions/upload-artifact@main
         with:
