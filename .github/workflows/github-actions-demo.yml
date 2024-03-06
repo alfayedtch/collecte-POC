@@ -9,8 +9,8 @@ jobs:
     name: Build ⛏
     runs-on: ubuntu-latest
     steps:
-      # - name: Checkout repository
-      #   uses: actions/checkout@main
+      - name: Checkout repository
+        uses: actions/checkout@main
       # - name: Install dependencies
       #   run: npm ci
       # - name: Build dependencies
