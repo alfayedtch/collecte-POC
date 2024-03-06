@@ -11,6 +11,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.*
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
       # - name: Build dependencies
       #   run: npm run build
       - name: Archive production artifact
@@ -18,8 +25,6 @@ jobs:
         with:
           name: dist
           path: ./www/
-      - name: Install dependencies
-        run: composer i
   deploy:
     name: Deploy 🚀
     needs: build
