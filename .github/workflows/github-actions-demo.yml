@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
-      - name: Install dependencies
-        run: composer i
       # - name: Build dependencies
       #   run: npm run build
       - name: Archive production artifact
@@ -20,6 +18,8 @@ jobs:
         with:
           name: dist
           path: ./www/
+      - name: Install dependencies
+        run: composer i
   deploy:
     name: Deploy 🚀
     needs: build
