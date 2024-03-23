@@ -6,6 +6,7 @@ www/yarn-error.log
 # Laravel 4 specific
 www/bootstrap/compiled.php
 www/app/storage/
+www/app/database/database.sqlite
 
 # Laravel 5 & Lumen specific
 www/public/storage
