@@ -1,10 +1,14 @@
 # template-cicd-laravel-lws
 
-creer les variables suivantes:
+creer les secrets suivants:
 -FTP_PASSWORD
--MAIN-BRANCH
+-SSH_USER
 -SSH_HOST
 -SSH_PRIVATE_KEY
--SSH_USER
+
+et les variables suivantes
+
+
+-MAIN_BRANCH
 -WORK_DIR
  
