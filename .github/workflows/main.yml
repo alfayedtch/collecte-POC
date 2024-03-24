@@ -51,6 +51,6 @@ jobs:
       - name: Sync files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with: 
-          server: ${{ secrets.ftp_host }}ftp.2hfan.org
-          username: ${{ secrets.ftp_usr }}revele@2hfan.org
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_usr }}
           password: ${{ secrets.ftp_password }}
