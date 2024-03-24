@@ -5,6 +5,7 @@ creer les secrets suivants:
 -SSH_USER
 -SSH_HOST
 -SSH_PRIVATE_KEY
+-FTP_USR
 
 et les variables suivantes
 

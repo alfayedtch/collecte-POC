@@ -47,10 +47,10 @@ jobs:
         uses: actions/download-artifact@main
         with: 
           name: dist
-          path: ${{ secrets.WORK_DIR }}
+          path: ${{ vars.WORK_DIR }}
       - name: Sync files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with: 
-          server: ftp.2hfan.org
-          username: revele@2hfan.org
+          server: ${{ secrets.ftp_host }}ftp.2hfan.org
+          username: ${{ secrets.ftp_usr }}revele@2hfan.org
           password: ${{ secrets.ftp_password }}
